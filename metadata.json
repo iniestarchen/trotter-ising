@@ -1,0 +1,33 @@
+{
+  "id": "trotter-ising",
+  "name": "Trotterized Transverse-Field Ising Model",
+  "category": "optimization",
+  "description": "One first-order Trotter step simulating the 1D transverse-field Ising model on 4 qubits (J=1, h=0.5, dt=0.1).",
+  "long_description": "Quantum simulation of the 1D transverse-field Ising model H = -J \u03a3 Z\u1d62Z\u1d62\u208a\u2081 - h \u03a3 X\u1d62. The first-order Trotter-Suzuki decomposition approximates e^{-iHt} \u2248 (e^{iJdtZZ})^\u2297 \u00b7 (e^{ihdtX})^\u2297 for small dt. The ZZ coupling is implemented via CNOT-Rz-CNOT; the X field via Rx rotations. Higher accuracy requires more Trotter steps (smaller dt) or higher-order formulas.",
+  "difficulty": "advanced",
+  "qubit_count": 4,
+  "clbit_count": 4,
+  "gate_count": 19,
+  "depth": 9,
+  "tags": [
+    "trotter",
+    "ising",
+    "quantum-simulation",
+    "variational",
+    "many-body"
+  ],
+  "circuit_formats": [
+    "qasm2"
+  ],
+  "source_file": "circuit.qasm",
+  "expected_output": "State approximating e^{-iHt}|++++\u27e9 after one Trotter step",
+  "references": [
+    {
+      "title": "Lloyd, S. (1996). Universal Quantum Simulators. Science 273, 1073",
+      "url": "https://doi.org/10.1126/science.273.5278.1073"
+    }
+  ],
+  "author": "OpenQC Community",
+  "license": "MIT",
+  "version": "1.0.0"
+}
