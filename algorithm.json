@@ -1,0 +1,31 @@
+{
+  "slug": "trotter-ising",
+  "name": "Trotter-Ising Simulation",
+  "version": "1.0.0",
+  "author": "iniestarchen",
+  "license": "Apache-2.0",
+  "description": "One first-order Trotter step simulating the 1D transverse-field Ising model on 4 qubits.",
+  "industries": [
+    "materials",
+    "chemistry"
+  ],
+  "techniques": [
+    "gate",
+    "analog"
+  ],
+  "difficulty": "advanced",
+  "computation_model": "gate",
+  "algorithm_type": "circuit",
+  "qubit_count": 4,
+  "tags": [
+    "trotter",
+    "ising",
+    "hamiltonian-simulation",
+    "condensed-matter"
+  ],
+  "access": "open",
+  "source": "official",
+  "metadata": {
+    "year_introduced": 1996
+  }
+}
